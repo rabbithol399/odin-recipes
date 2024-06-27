@@ -23,9 +23,9 @@ body:before {
 .page{
     width: 600px;
     margin: 0 auto;
-    text-align: center; /* Center content */
+    text-align: center;
     z-index: 1; /* Ensure content is above overlay */
-    color: rgb(0, 0, 0); /* Text color */
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -51,6 +51,7 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 50px;
+    font-weight: 500;
 }
 
 
@@ -61,12 +62,12 @@ p{
     font-weight: bolder;
     padding: 5px;
     text-align: center;
-    border: 2px solid #5D6063;    /* Dark gray */
     border-radius: 5px;
     font-size: large;
     margin: 40px;
     width: 200px;
     margin: 20px auto;
+    text-decoration: none;
 }
 
 
@@ -75,24 +76,31 @@ p{
     background-color: #71a5df;   
 
 }
-
+.button:visited:hover{
+    background-color: #71a5df;
+    color: white;
     
 }
-a:visited{
-    text-decoration: none; color: none;
+
+a:visited {
+    color: inherit; /* Inherit the color from their parent */
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 #food {
 color: black;
 }
 
-#list{
+.list-style{
     font-size: 24px;
     text-align: center;
-    color: rgb(87, 0, 41);
+    color: rgb(151, 30, 87);
     font-weight: bolder;
-    text-decoration: underline;
-    margin: 0px;
+    margin-left: 10px;
 }
 
 .greybox{
@@ -103,8 +111,10 @@ color: black;
     font-size: 18px;
     text-align: left;
     font-weight: bolder;
-    text-decoration: none; color: aliceblue;
+    text-decoration: none; color: rgb(0, 23, 12);
 }
-a:link{
+
+.list-style a{
     text-decoration: none;
 }
+ 
