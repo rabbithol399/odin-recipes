@@ -1,48 +1,72 @@
+body{
+    background-image: url(/images/pexels-kseniachernaya-3952043.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 251, 251, 0.5); /* Semi-transparent black overlay */
+}
+
 .page{
     width: 600px;
     margin: 0 auto;
+    text-align: center; /* Center content */
+    z-index: 1; /* Ensure content is above overlay */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 20px;
 }
 
 .h1{
-    font-size: 36px;
+    font-size: 46px;
     text-align: center;
     margin-top: 100px;
 }
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
 .intro{
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     text-align: center;
 }
+
+p{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+
 .button{
     
     color: #ffffffdb;
     background-color: #5995DA;    /* Blue */
-    font-weight: bold;
-    padding: 10px;
+    font-weight: bolder;
+    padding: 5px;
     text-align: center;
     border: 2px solid #5D6063;    /* Dark gray */
     border-radius: 5px;
-
+    font-size: large;
+    margin: 40px;
     width: 200px;
     margin: 20px auto;
-}
-
-.button:link,
-.buttin:visited{
-    display: block;
-    text-decoration: none;
-    
-    color: #ffffffdb;
-    background-color: #5995DA;    /* Blue */
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #5D6063;    /* Dark gray */
-    border-radius: 5px;
-
-    width: 200px;
-    margin: 5px auto;
 }
 
 
@@ -51,18 +75,36 @@
     background-color: #71a5df;   
 
 }
-.button:visited:hover{
-    background-color: #71a5df;
-    color: white;
+
     
 }
 a:visited{
-    text-decoration: none;
+    text-decoration: none; color: none;
 }
 
 #food {
 color: black;
 }
 
+#list{
+    font-size: 24px;
+    text-align: center;
+    color: rgb(87, 0, 41);
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 0px;
+}
 
-
+.greybox{
+    border-radius: 20px;
+    background-color:rgba(10, 124, 63, 0.4);
+    padding: 6px;
+    margin: 40px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bolder;
+    text-decoration: none; color: aliceblue;
+}
+a:link{
+    text-decoration: none;
+}
